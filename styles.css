@@ -101,17 +101,26 @@ p{
 
     height:30px;
     width:150px;
-    color:#039be5;
+    color:black;
     position:relative;
-    left:30px;
-    margin-right: 53px;
+    left:990px;
+    top:-20px;
 
 }
 
+/*crea pantalla negra encima del background para utilizar en carrito*/
 .half-black {
     background: rgba(0, 0, 0, 0.5);
+    
   }
 
 
+/*se esconden las imagenes de los helados. Solo deberían aparecer si el usuario agregó X sabor al carrito*/
+  #heladoVainilla { visibility: hidden; }
+  #heladoFresa { visibility: hidden; }
+  #heladoPistacho { visibility: hidden; }
+  #heladoCiruela { visibility: hidden; }
+  #heladoArandano { visibility: hidden; }
+  #heladoLimon { visibility: hidden; }
 
 
