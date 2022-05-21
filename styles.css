@@ -1,23 +1,31 @@
+/*Agregado por bryan*/
+:root {
+    --blanco: #ffffff;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --oscuro: #212121;
+}
+
 body {
     font-family: 'Roboto', sans-serif; 
+    background-image: url('fotos/ice cream cones 2.jpg');
+    align-items: center;
 }
 
 main {
-    background-image: url('ice cream cones 2.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
     height:750px;
     width:1250px;
+    background-color: rgb(0 0 0 / 30%);
 }
 
 .container {
     display:flex;
-    width:100%;
+    flex-direction: column;
+    align-items: center;
     justify-content:center;
-    flex-wrap: wrap;
 }
-
-
 
 h1 {
     font-size: 40px;
@@ -29,6 +37,7 @@ h2 {
     font-size: 40px;
     color: black;
     display:flex;
+    text-align: center;
     justify-content:center;
     flex-wrap: wrap;
 }
@@ -56,7 +65,6 @@ input {
 }
 
 .botonHome{
-
     height:50px;
     width: 100px;
     border-radius:20px;
@@ -73,8 +81,6 @@ input {
 }
 
 .botonComprar{
-
-
     height:30px;
     width:150px;
     border-radius:20px;
@@ -89,23 +95,18 @@ input {
 
 
 .material-symbols-outlined{
-
-position: relative;
-display: inline-block;
-left:980px;
-top:-55px;
-cursor: pointer;
+    position: relative;
+    display: inline-block;
+    left:980px;
+    top:-55px;
+    cursor: pointer;
 }
 
 p{
-
-    height:30px;
-    width:150px;
     color:black;
-    position:relative;
-    left:990px;
+    left:1000px;
     top:-20px;
-
+    background-color: var(--gris);
 }
 
 /*crea pantalla negra encima del background para utilizar en carrito*/
@@ -113,6 +114,113 @@ p{
     background: rgba(0, 0, 0, 0.5);
     
   }
+
+/*---------------------Codigo de prueba Bryan--------------------------------*/
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.servicios {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display:flex;
+    justify-content: space-between;
+}
+
+.servicio {
+    text-align:center;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primario);
+    border-radius: 50%;
+}
+
+.iconos i {
+    font-size: 2rem;
+    color: var(--oscuro);
+}
+
+.contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primario);
+    margin-bottom: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content2 {
+    width: 200px;
+	padding: 25px 0;
+	margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botonSend {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    margin-top: .5rem;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border:none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.titleHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.billDetails {
+    
+}
 
 
 /*se esconden las imagenes de los helados. Solo deberían aparecer si el usuario agregó X sabor al carrito*/

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Agregar helados</title>
+    <link rel="icon" type="image/x-icon" href="fotos/ice cream drawing.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="application/javascript" src="funcionalidades.js"></script>
+</head>
+
+<body>
+    <h2>Agregar nuevo tipo de helado</h2>
+    <div class="content2">
+        <div id="info" class="info">
+            <form class="formulario" action="#" method="POST">
+                <div class="campo">
+                    <input type="text" name="sabor" placeholder="Sabor del helado" required>
+                </div>
+                
+                <div class="campo">
+                    <input type="text" name="precio" placeholder="Precio del helado">
+                </div>
+                
+                <label>Descripción </label>
+                <div class="campo w-100">
+                    <textarea cols="45" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+        
+        <div id="agregar" class="agregar">
+            <form class="formulario" action="#" method="POST" enctype="multipart/form-data">
+                <div class="enviar">
+                    <input type="file" name="adjunto" accept="jpg,.png" multiple />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="botonSend">
+        <a class="boton" href="#contacto">Agregar</a>
+    </div>
+</body>
+</html>
